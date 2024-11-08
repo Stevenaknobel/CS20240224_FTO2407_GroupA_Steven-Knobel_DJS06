@@ -91,3 +91,12 @@ const minPrice = Math.min(...prices);
 console.log(`Highest: ${maxPrice}. Lowest: ${minPrice}.`);
 
 //6. **Object Transformation**: Using `Object.entries` and `reduce`, recreate the products object with keys 'name' and 'cost', maintaining their original values.
+const transformedProducts = products.reduce((acc, product) => {
+  acc.push({
+    name: product.product,
+    cost: product.price
+  });
+  return acc;
+}, []);
+
+console.log(transformedProducts);
