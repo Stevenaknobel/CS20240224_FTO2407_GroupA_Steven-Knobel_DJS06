@@ -13,6 +13,7 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+//Basic Tasks
 
 //1. **ForEach Basics**: Use `forEach` to log each name and each province to the console. Then, log each name with a matching province in the format "Name (Province)".
 // Log each name
@@ -57,3 +58,13 @@ const nameProvinceMap = names.reduce((acc, name, index) => {
 }, {});
 
 console.log(nameProvinceMap);
+
+//Advanced Tasks
+
+//1. **Log Products**: Iterate over the products array, logging each product name.
+products.forEach(product => console.log(product.product));
+//2. **Filter by Name Length**: Filter out products with names longer than 5 characters.
+//3. **Price Manipulation**: Filter out products without prices, convert string prices to numbers, and calculate the total price using `reduce`.
+//4. **Concatenate Product Names**: Use `reduce` to concatenate all product names into a single string.
+//5. **Find Extremes in Prices**: Identify the highest and lowest-priced items, returning a string formatted as "Highest: X. Lowest: Y."
+//6. **Object Transformation**: Using `Object.entries` and `reduce`, recreate the products object with keys 'name' and 'cost', maintaining their original values.
