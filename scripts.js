@@ -31,6 +31,9 @@ names.forEach((name, index) => {
 });
 
 //2. **Uppercase Transformation**: Use `map` to create a new array of province names in all uppercase. Log the new array to the console.
+const provincesUppercase = provinces.map(province => province.toUpperCase());
+console.log(provincesUppercase);
+
 //3. **Name Lengths**: Create a new array using `map` that contains the length of each name.
 //4. **Sorting**: Use `sort` to alphabetically sort the provinces. 
 //5. **Filtering Cape**: Use `filter` to remove provinces containing "Cape". Log the count of remaining provinces.
