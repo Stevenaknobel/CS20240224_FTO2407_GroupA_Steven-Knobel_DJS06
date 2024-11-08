@@ -43,6 +43,8 @@ const alphabeticalProvinces = [...provinces].sort();
 console.log(alphabeticalProvinces);
 
 //5. **Filtering Cape**: Use `filter` to remove provinces containing "Cape". Log the count of remaining provinces.
+const filterOutCapeProvinces = provinces.filter(province => !province.includes('Cape'));
+console.log(filterOutCapeProvinces.length);
 
 //6. **Finding 'S'**: Create a boolean array using `map` and `some` to determine if a name contains the letter 'S'.
 //7. **Creating Object Mapping**: Use `reduce` to transform the names array into an object mapping names to their respective provinces.
