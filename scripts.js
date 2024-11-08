@@ -35,6 +35,9 @@ const provincesUppercase = provinces.map(province => province.toUpperCase());
 console.log(provincesUppercase);
 
 //3. **Name Lengths**: Create a new array using `map` that contains the length of each name.
+const nameLengths = names.map(name => name.length);
+console.log(nameLengths);
+
 //4. **Sorting**: Use `sort` to alphabetically sort the provinces. 
 //5. **Filtering Cape**: Use `filter` to remove provinces containing "Cape". Log the count of remaining provinces.
 //6. **Finding 'S'**: Create a boolean array using `map` and `some` to determine if a name contains the letter 'S'.
