@@ -69,6 +69,13 @@ const filteredProductsByLength = products.filter(product => product.product.leng
 console.log(filteredProductsByLength);
 
 //3. **Price Manipulation**: Filter out products without prices, convert string prices to numbers, and calculate the total price using `reduce`.
+const totalPrice = products
+  .filter(product => String(product.price).trim() !== '' && !isNaN(product.price))
+  .map(product => parseFloat(product.price))
+  .reduce((total, price) => total + price, 0);
+
+console.log(totalPrice);
+
 //4. **Concatenate Product Names**: Use `reduce` to concatenate all product names into a single string.
 //5. **Find Extremes in Prices**: Identify the highest and lowest-priced items, returning a string formatted as "Highest: X. Lowest: Y."
 //6. **Object Transformation**: Using `Object.entries` and `reduce`, recreate the products object with keys 'name' and 'cost', maintaining their original values.
